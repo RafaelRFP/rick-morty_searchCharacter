@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  app-charactersearch:
+    image: 'searchcharacter:latest'
+    build:
+      context: .
+    container_name: app-charactersearch
+    ports:
+      - "3456:3456"
